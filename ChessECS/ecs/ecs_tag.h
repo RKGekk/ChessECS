@@ -1,0 +1,6 @@
+namespace ecs {
+
+  struct Tag {
+
+  };
+}

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{d1b8cc3b-4520-444a-a89e-2da81659ad2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{e388a4a0-1a57-4f7c-850b-55ee979fc96d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{f1052593-e134-4213-8921-2bc2efe7c5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{2f4d5fb6-8b77-44e8-8a63-abe8c01db29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Profiler">
+      <UniqueIdentifier>{b4748b16-c196-4da2-9dba-836d4bb1f171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Render">
+      <UniqueIdentifier>{8d514f23-80ca-4cdb-8398-45fd63b339e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Profiler">
+      <UniqueIdentifier>{08ba696e-3025-49d4-b608-c042344d6829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Render">
+      <UniqueIdentifier>{6155263b-7b47-4e3f-93bb-b67483e63594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Render\Shader">
+      <UniqueIdentifier>{65aca229-23e8-4dc9-9e9e-f34e00a68d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Render\Texture">
+      <UniqueIdentifier>{30027492-3fb2-444f-97fd-317b22da7702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Render\Shader">
+      <UniqueIdentifier>{5ce29532-5721-47db-b167-1dd11607f527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Render\Texture">
+      <UniqueIdentifier>{bb58fc67-b884-4fc0-82c0-cbbcdaa204f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ECS">
+      <UniqueIdentifier>{5c8acf3e-74f8-4dcf-86ac-2a8e1dee732e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{f8444f82-27b0-493a-a491-4790aad35a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ECS\Manager">
+      <UniqueIdentifier>{8c34efdb-d92f-4356-9bcc-d5703a95004b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\Manager">
+      <UniqueIdentifier>{4e8bd1d8-8e5a-4547-9f8b-20cc297a5775}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apps\application.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="apps\application_data.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="apps\context.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Profiler\profiler.h">
+      <Filter>Header Files\Engine\Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\vertex_array_object.h">
+      <Filter>Header Files\Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3dmath.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\time.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\transform2d.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\sprite.h">
+      <Filter>Header Files\Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\world_renderer.h">
+      <Filter>Header Files\Engine\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\Shader\shader.h">
+      <Filter>Header Files\Engine\Render\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\Shader\shader_gen.h">
+      <Filter>Header Files\Engine\Render\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\Texture\texture.h">
+      <Filter>Header Files\Engine\Render\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Render\Texture\texture2d.h">
+      <Filter>Header Files\Engine\Render\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\base_types.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\ecs.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\ecs_event.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\ecs_core.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\ecs_scene.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\ecs_tag.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\singleton.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\system_order.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\system_tag.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\archetype.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\compile_time_string.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\component_container.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\component_function.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\core_interface.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\entity_container.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\entity_id.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\entity_pull.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\is_vector.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\string_hash.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\system_description.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\type_description.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ecs\manager\type_info.h">
+      <Filter>Header Files\ECS\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apps\context.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="apps\application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Header Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Profiler\profiler.cpp">
+      <Filter>Source Files\Engine\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\transform2d.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\sprite.cpp">
+      <Filter>Source Files\Engine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\world_renderer.cpp">
+      <Filter>Source Files\Engine\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Shader\shader.cpp">
+      <Filter>Source Files\Engine\Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Shader\shader_codegen.cpp">
+      <Filter>Source Files\Engine\Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Shader\shader_compile.cpp">
+      <Filter>Source Files\Engine\Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Shader\shader_factory.cpp">
+      <Filter>Source Files\Engine\Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Texture\texture.cpp">
+      <Filter>Source Files\Engine\Render\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Render\Texture\texture2d.cpp">
+      <Filter>Source Files\Engine\Render\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\ecs_core.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\ecs_scene.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\archetype.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\component_container.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\core_interface.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\entity_container.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\entity_id.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\entity_pull.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\hash_string.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\system_description.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\type_description.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ecs\manager\type_info.cpp">
+      <Filter>Source Files\ECS\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

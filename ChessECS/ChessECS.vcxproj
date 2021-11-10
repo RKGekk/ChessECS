@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{57f80126-9322-478e-9114-5f7f176aeb5f}</ProjectGuid>
+    <RootNamespace>ChessECS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)ChessECS\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)ChessECS\libs\x64\Debug;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ecs\base_types.h" />
+    <ClInclude Include="ecs\ecs.h" />
+    <ClInclude Include="ecs\ecs_core.h" />
+    <ClInclude Include="ecs\ecs_event.h" />
+    <ClInclude Include="ecs\ecs_scene.h" />
+    <ClInclude Include="ecs\ecs_tag.h" />
+    <ClInclude Include="ecs\manager\archetype.h" />
+    <ClInclude Include="ecs\manager\compile_time_string.h" />
+    <ClInclude Include="ecs\manager\component_container.h" />
+    <ClInclude Include="ecs\manager\component_function.h" />
+    <ClInclude Include="ecs\manager\core_interface.h" />
+    <ClInclude Include="ecs\manager\entity_container.h" />
+    <ClInclude Include="ecs\manager\entity_id.h" />
+    <ClInclude Include="ecs\manager\entity_pull.h" />
+    <ClInclude Include="ecs\manager\is_vector.h" />
+    <ClInclude Include="ecs\manager\string_hash.h" />
+    <ClInclude Include="ecs\manager\system_description.h" />
+    <ClInclude Include="ecs\manager\type_description.h" />
+    <ClInclude Include="ecs\manager\type_info.h" />
+    <ClInclude Include="ecs\singleton.h" />
+    <ClInclude Include="ecs\system_order.h" />
+    <ClInclude Include="ecs\system_tag.h" />
+    <ClInclude Include="engine\3dmath.h" />
+    <ClInclude Include="apps\application.h" />
+    <ClInclude Include="apps\application_data.h" />
+    <ClInclude Include="apps\context.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="engine\input.h" />
+    <ClInclude Include="engine\Profiler\profiler.h" />
+    <ClInclude Include="engine\Render\Shader\shader.h" />
+    <ClInclude Include="engine\Render\Shader\shader_gen.h" />
+    <ClInclude Include="engine\Render\sprite.h" />
+    <ClInclude Include="engine\Render\Texture\texture.h" />
+    <ClInclude Include="engine\Render\Texture\texture2d.h" />
+    <ClInclude Include="engine\Render\vertex_array_object.h" />
+    <ClInclude Include="engine\Render\world_renderer.h" />
+    <ClInclude Include="engine\time.h" />
+    <ClInclude Include="engine\transform2d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="apps\application.cpp" />
+    <ClCompile Include="apps\context.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="ecs\ecs_core.cpp" />
+    <ClCompile Include="ecs\ecs_scene.cpp" />
+    <ClCompile Include="ecs\manager\archetype.cpp" />
+    <ClCompile Include="ecs\manager\component_container.cpp" />
+    <ClCompile Include="ecs\manager\core_interface.cpp" />
+    <ClCompile Include="ecs\manager\entity_container.cpp" />
+    <ClCompile Include="ecs\manager\entity_id.cpp" />
+    <ClCompile Include="ecs\manager\entity_pull.cpp" />
+    <ClCompile Include="ecs\manager\hash_string.cpp" />
+    <ClCompile Include="ecs\manager\system_description.cpp" />
+    <ClCompile Include="ecs\manager\type_description.cpp" />
+    <ClCompile Include="ecs\manager\type_info.cpp" />
+    <ClCompile Include="engine\input.cpp" />
+    <ClCompile Include="engine\Profiler\profiler.cpp" />
+    <ClCompile Include="engine\Render\Shader\shader.cpp" />
+    <ClCompile Include="engine\Render\Shader\shader_codegen.cpp" />
+    <ClCompile Include="engine\Render\Shader\shader_compile.cpp" />
+    <ClCompile Include="engine\Render\Shader\shader_factory.cpp" />
+    <ClCompile Include="engine\Render\sprite.cpp" />
+    <ClCompile Include="engine\Render\Texture\texture.cpp" />
+    <ClCompile Include="engine\Render\Texture\texture2d.cpp" />
+    <ClCompile Include="engine\Render\world_renderer.cpp" />
+    <ClCompile Include="engine\transform2d.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

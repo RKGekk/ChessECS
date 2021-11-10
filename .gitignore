@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.ipch
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+/.vs/ChessECS/v16
